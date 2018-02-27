@@ -3,7 +3,7 @@
 harmony:
   name: Mateusz Grabarski
   # Little description about your site
-  description: Mój blog o programowaniu.
+  description: Osobisty blog o programowaniu.
   # 'meta_description:' Write an awesome description for your new site here.
   # It will appear in your document head meta (for Google search results) and
   # in your feed.xml site description.
@@ -22,6 +22,7 @@ harmony:
   # Profile links, leave blank to ignore
   social:
     github: mgrabarski
+    gplus: +MateuszGrabarski
   #  twitter:
   #  facebook:
   #  gplus:
