@@ -1,6 +1,7 @@
 ---
 title: Android i SharedPreferences
 layout: post
+comments: true
 categories:
 - Android
 ---
@@ -96,3 +97,7 @@ Callback zostanie wywołany tylko jeżeli wartość dla klucza zostanie dodane l
 ## Podsumowanie
 
 Jeżeli w aplikacji pojawia się potrzeba przechowywania wartości tak aby były nie zmienione po ponownym uruchomieniu aplikacji warto wziąć pod uwagę SharedPreferences. Wyżej opisany mechanizm można wykorzystać w wielu sytuacja np. ustawienia aplikacji. Implementacja jest szybka i daje spore możliwości.
+
+{% if page.comments %}
+
+{% endif %}

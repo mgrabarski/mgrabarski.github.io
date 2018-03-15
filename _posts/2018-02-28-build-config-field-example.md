@@ -1,6 +1,7 @@
 ---
 title: BuildConfig dodanie własnych stałych w konfiguracji Gradle
 layout: post
+comments: true
 categories:
 - gradle
 - tip
@@ -56,7 +57,7 @@ public final class BuildConfig {
   public static final String FLAVOR = "";
   public static final int VERSION_CODE = 1;
   public static final String VERSION_NAME = "1.0";
-	
+
   // Fields from default config.
   public static final long BUILD_DATE = 1519828511598L;
 }
@@ -66,8 +67,8 @@ To pozwala już dowolnie używać tej wartości. Należy pamiętać, że stałe 
 
 ### productFlavors
 
-Za nim aplikacja zostanie udostępniona użytkownikom końcowym należy ją przetestować i sprawdzić czy wszystko działa. Najlepiej gdyby aplikacja była testowana w zamkniętym środowisku. 
-Sporo aplikacji podczas działania komunikuje się z zewnętrznym api i najczęściej jest ono podzielone na wersje debugową oraz produkcyjną aby nie mieszać danych. 
+Za nim aplikacja zostanie udostępniona użytkownikom końcowym należy ją przetestować i sprawdzić czy wszystko działa. Najlepiej gdyby aplikacja była testowana w zamkniętym środowisku.
+Sporo aplikacji podczas działania komunikuje się z zewnętrznym api i najczęściej jest ono podzielone na wersje debugową oraz produkcyjną aby nie mieszać danych.
 
 Przykład naszych URLi do api:
 * "produkcyjne api"
@@ -111,7 +112,7 @@ public final class BuildConfig {
 Stałe definiowane po przez buildConfigField nie są dostępne z poziomu plików xml.
 Tutaj jest podobnie jak z buildConfigField tylko, że słowo kluczowe to "resValue".
 
-Składnia jest identyczna: 
+Składnia jest identyczna:
 
 resValue "typ", "nazwa", "wartość"
 
@@ -141,3 +142,7 @@ Po przebudowaniu aplikacji mogę używać nowego zasobu dowolnie w kodzie jak i 
 ### Podsumowanie
 
 Moim zdaniem warto korzystać z wyżej opisanych stałych. Daje nam to gwaracji, że w zależności od rodzaju wersji aplikacji nasze url, nazwy itd. będą odpowiednio wygenerowane i używane.
+
+{% if page.comments %}
+
+{% endif %}

@@ -1,6 +1,7 @@
 ---
 title: Wzorce projektowe - Strategia
 layout: post
+comments: true
 categories:
 - Wzorce projektowe
 ---
@@ -11,7 +12,7 @@ Pozwala on na zmianę działania pewnego zachowania wewnątrz klasy po przez ust
 
 ## Przykład
 
-Przykładem będzie klasa wroga, która będzie zawierać rodzaj ataku. Rodzaj ataku będzie tutaj strategią. 
+Przykładem będzie klasa wroga, która będzie zawierać rodzaj ataku. Rodzaj ataku będzie tutaj strategią.
 Wróg może mieć kilka rodzajów ataku np. normalny, magiczny, dystansowy itd.
 
 Klasa Enemy w konstruktorze pobiera AttackType.
@@ -70,7 +71,7 @@ public interface AttackType {
 
 {% endhighlight %}
 
-Dla przykładu zostaną stworzeni dwa rodzaje wrogów. Łucznik oraz mag. 
+Dla przykładu zostaną stworzeni dwa rodzaje wrogów. Łucznik oraz mag.
 Łucznik będzie atakować na dystans, a mag będzie miał atak magiczny.
 
 Klasy te będą dziedziczyć po klasie Enemy.
@@ -86,7 +87,7 @@ public class Archer extends Enemy {
 
 
 public class Mage extends Enemy {
-    
+
     public Mage(AttackType attackType) {
         super(attackType);
     }
@@ -125,3 +126,8 @@ mage.getAttackType().attack();
 #### Wady
 
 1. Zwiększa się ilość klas
+
+
+{% if page.comments %}
+
+{% endif %}
